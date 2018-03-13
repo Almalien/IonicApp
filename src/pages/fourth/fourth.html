@@ -1,0 +1,94 @@
+<!--
+  Generated template for the FourthPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Many elements</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <p>Input</p>
+        <ion-item>
+          <ion-input type="text" placeholder="Username"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+      
+      </ion-list>
+<br>
+<br>
+<hr>
+      <ion-list radio-group>
+        <p>Radio</p>
+          <ion-list-header>
+            Language
+          </ion-list-header>
+        
+          <ion-item>
+            <ion-label>Spanish</ion-label>
+            <ion-radio checked="true" value="spanish"></ion-radio>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label>English</ion-label>
+            <ion-radio value="english"></ion-radio>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label>French</ion-label>
+            <ion-radio value="french" disabled="true"></ion-radio>
+          </ion-item>
+        </ion-list>
+<hr>
+<p>Select</p>
+        <ion-list>
+            <ion-item>             
+              <ion-label>Music</ion-label>
+              <ion-select [(ngModel)]="music" multiple="true" cancelText="Nah" okText="Okay!">
+                <ion-option value="Rock" selected="true">Rock</ion-option>
+                <ion-option value="Pop">Pop</ion-option>
+                <ion-option value="Punk" selected="true">Punk</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+<hr>
+<p>Toggle</p>
+<ion-item>
+    <ion-label> Wifi</ion-label>
+    <ion-toggle  checked="false"></ion-toggle>
+  </ion-item>
+  <hr>
+  <p>Checkbox</p>
+  <ion-item>
+      <ion-label>Jill Valentine</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Claire Redfield</ion-label>
+      <ion-checkbox color="blue"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+        <ion-label>Leon S. Kennedy</ion-label>
+        <ion-checkbox color="danger"></ion-checkbox>
+      </ion-item>
+
+      <hr>
+      <p>Datetime</p>
+      <ion-item>
+          <ion-label>Stablish time</ion-label>
+          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" ></ion-datetime>
+        </ion-item>
+
+        <button  ion-button color=custom3 navPop="FourthPage"  >Go back</button>
+</ion-content>
